@@ -1,0 +1,4 @@
+include ':adam-complier'
+include ':adam-annotation'
+include ':app'
+rootProject.name = "APTDemo"
