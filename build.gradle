@@ -4,9 +4,13 @@ buildscript {
     repositories {
         google()
         jcenter()
+        maven {
+            url 'file://' + new File(projectDir, '/repository').absolutePath
+        }
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:3.6.1'
+        classpath 'com.adam.gradle.plugin:adam-gradle-plugin:1.0.0'
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
 
         // NOTE: Do not place your application dependencies here; they belong

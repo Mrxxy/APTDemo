@@ -1,3 +1,4 @@
+include ':adam-gradle-plugin'
 include ':adam-complier'
 include ':adam-annotation'
 include ':app'
